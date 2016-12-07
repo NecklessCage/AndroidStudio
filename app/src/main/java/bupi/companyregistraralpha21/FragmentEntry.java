@@ -96,7 +96,7 @@ public class FragmentEntry extends Fragment {
         // Set button on click listener
         _btnExpandCollapse = (Button) v.findViewById(R.id.btn_expand_collapse);
         // TODO: button on-click listener
-        /*
+
         _btnExpandCollapse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -118,7 +118,10 @@ public class FragmentEntry extends Fragment {
                 } else { // Expand them all
                     for (int j = 0; j < _exExpandableListView.getExpandableListAdapter().getGroupCount(); j++) {
                         _exExpandableListView.expandGroup(j);
-                        for (int k = 0; k < _exExpandableListView.getExpandableListAdapter().getChildrenCount(j); k++) {
+                        final int childCount = ((CustomExpandableListAdapter)
+                                _exExpandableListView.getExpandableListAdapter())
+                                .childCount(j);
+                        for (int k = 0; k < childCount; k++) {
                             ((ExpandableListView)
                                     _exExpandableListView
                                             .getExpandableListAdapter()
@@ -130,7 +133,7 @@ public class FragmentEntry extends Fragment {
                     _btnExpandCollapse.setText(R.string.collapse_all);
                 } // if expanded
             } // onClick
-        });*/
+        });
 
         // Populate expandable list view
         _exExpandableListView = (ExpandableListView) v.findViewById(R.id.main_list);

@@ -58,7 +58,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 // }
         _data = data;
         _inflater = LayoutInflater.from(context);
-        _listViewCache = new LastExpandableListView[data.length];
+        _listViewCache = new LastExpandableListView[_data.length];
     } // Constructor
 
     public Object getChild(int groupPosition, int childPosition) {
@@ -114,8 +114,14 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         return v;
     }
 
+    @Override
     public int getChildrenCount(int groupPosition) {
-        return _data[groupPosition].length; // ********************************** WARNING!!!!! This affects view in unexpected ways.
+        return 1;
+        //return _data[groupPosition].length; // ********************************** WARNING!!!!! This affects view in unexpected ways.
+    }
+    // TODO: Following method is a workaround since the developer is too dumb to override onLayout() in LastExpandableListView
+    public int childCount(int gp) {
+        return _data[gp].length;
     }
 
     public Object getGroup(int groupPosition) {
@@ -209,11 +215,10 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         int lvl1rowHeight = 1 + _context.getResources().getDimensionPixelSize(R.dimen.lvl2_row_height);
         int lvl2rowHeight = 1 + _context.getResources().getDimensionPixelSize(R.dimen.lvl3_row_height);
         int viewHeight = 0;
-        for (int i = 0; i < lvl1GroupCount; i++) {
-            viewHeight += lvl1rowHeight;       // for the group row
-            if ((lvl1View != null) && (lvl1View.isGroupExpanded(i))) {
-                // then add the children too (minus the group descriptor)
-                viewHeight += (_data[lvl0Indx][i].length - 1) * lvl2rowHeight;
+        for (int j = 0; j < lvl1GroupCount; j++) {
+            viewHeight += lvl1rowHeight; // for the group row
+            if ((lvl1View != null) && (lvl1View.isGroupExpanded(j))) { // then add the children too (minus the group descriptor)
+                viewHeight += (_data[lvl0Indx][j].length - 1) * lvl2rowHeight;
             } // if
         } // for i
         return viewHeight;

@@ -3,14 +3,15 @@ package bupi.companyregistraralpha21.custom;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.View;
 import android.widget.ExpandableListView;
-import android.widget.Toast;
 
 import bupi.companyregistraralpha21.R;
 
 public class LastExpandableListView extends ExpandableListView {
+
+    private int _viewHeight;
+
     public LastExpandableListView(Context context) {
         super(context);
         setGroupIndicator(null);
@@ -21,20 +22,22 @@ public class LastExpandableListView extends ExpandableListView {
 
     public void setViewHeight(int viewHeight) {
         _viewHeight = viewHeight;
-        Log.d(LOG_TAG, "viewHeight set: " + _viewHeight);
     } // setViewHeight
 
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec,               heightMeasureSpec);
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         setMeasuredDimension(getMeasuredWidth(), _viewHeight);
+        /*
         Log.d(LOG_TAG, "onMeasure " + this +
                 ": width: " + decodeMeasureSpec(widthMeasureSpec) +
                 "; height: " + decodeMeasureSpec(heightMeasureSpec) +
                 "; measuredHeight: " + getMeasuredHeight() +
                 "; measuredWidth: " + getMeasuredWidth());
+                */
     } // onMeasure
 
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        // TODO: Study onLayout :(
         super.onLayout(changed, left, top, right, bottom);
     } // onLayout
 
@@ -55,6 +58,5 @@ public class LastExpandableListView extends ExpandableListView {
         return modeString + Integer.toString(View.MeasureSpec.getSize(measureSpec));
     } // decodeMeasureSpec
 
-    private static final String LOG_TAG = "DebugExpandableListView";
-    private int _viewHeight;
+    //private static final String LOG_TAG = "DebugExpandableListView";
 } // class
