@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lvl1_bg">#1b5e20</color>
+    <color name="lvl2_bg">#43a047</color>
+    <color name="lvl3_bg">#a5d6a7</color>
+    <color name="leaf_bg">#43a047</color>
+
+    <color name="lvl1_fg">#ccc</color>
+    <color name="lvl2_fg">#eee</color>
+    <color name="lvl3_fg">#333</color>
+    <color name="leaf_fg">#eee</color>
+
+    <color name="lvl1_divider">#ccc</color>
+    <color name="lvl2_divider">#ccc</color>
+    <color name="lvl3_divider">#222</color>
+    <color name="leaf_divider">#ccc</color>
+</resources>

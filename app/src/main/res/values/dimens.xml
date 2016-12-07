@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+
+    <!-- Animation constants -->
+    <dimen name="animator_sliding_width_plus">200dp</dimen>
+    <dimen name="animator_sliding_width_minus">-200dp</dimen>
+
+    <!-- -->
+    <dimen name="lvl1_row_height">80dp</dimen>
+    <dimen name="lvl2_row_height">60dp</dimen>
+    <dimen name="lvl3_row_height">60dp</dimen>
+    <dimen name="leaf_row_height">40dp</dimen>
+
+    <dimen name="lvl1_padding">10dp</dimen>
+    <dimen name="lvl2_padding">25dp</dimen>
+    <dimen name="lvl3_2_padding">40dp</dimen>
+    <dimen name="leaf_padding">15dp</dimen>
+
+    <dimen name="lvl1_text_size">16sp</dimen>
+    <dimen name="lvl2_text_size">14sp</dimen>
+    <dimen name="lvl3_text_size">14sp</dimen>
+    <dimen name="leaf_text_size">14sp</dimen>
+</resources>

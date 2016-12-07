@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Company Registrar Alpha 2.1</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="expand_all">Expand All</string>
+    <string name="collapse_all">Collapse All</string>
+
+    <!-- -->
+    <!-- 1 -->
+    <string name="step1">Step 1: Check availability of company name at DICA</string>
+    <string name="step1_1">1.1 Submit signed name check with two directors\' NRC copies</string>
+    <string name="step1_1_1">1.1.1 Preparation</string>
+    <string-array name="step1_1_1">
+        <item>Name-check form (bought from DICA or downloaded from DICA website</item>
+        <item>+ 1,000 kyat</item>
+        <item>Choose at least 5 different names</item>
+        <item>NRC copies of company directors</item>
+    </string-array>
+    <string name="step1_1_2">1.1.2 \@DICA</string>
+    <string-array name="step1_1_2">
+        <item>Arrive @ 8:30 am</item>
+        <item>Fill name-check form and submit</item>
+    </string-array>
+
+
+    <string name="step2">Step 2: Obtain company registration forms at DICA and pay stamp duty</string>
+    <string name="step2_1">2.1 Obtain company registration forms at DICA</string>
+    <string name="step2_1_1">2.1.1 Registration forms</string>
+    <string-array name="step2_1_1">
+        <item>1. Application cover letter</item>
+        <item>2. Declaration of registration (Form 1)</item>
+        <item>3. Situation of registered office form</item>
+        <item>4. Statement of company objectives</item>
+        <item>5. Directors\' details (Form 26)</item>
+        <item>6. Memorandum of Association</item>
+        <item>7. Articles of Association</item>
+        <item> + 5,100 kyat</item>
+    </string-array>
+    <string name="step2_1_2">2.1.2 Preparation</string>
+    <string-array name="step2_1_2">
+        <item>Fill the registration forms</item>
+    </string-array>
+    <string name="step2_1_3">2.1.3 \@DICA</string>
+    <string-array name="step2_1_3">
+        <item>Submit the registration forms to DICA &amp; wait 2 hours</item>
+        <item>Make photocopies of documents given to you by DICA &amp; bind them into a book (5 copies)</item>
+    </string-array>
+
+    <string name="step2_2">2.2 Pay stamp duty at One Stop Service (OSS) or Internal Revenue Department</string>
+    <string name="step2_2_1">2.2.1 \@OSS</string>
+    <string-array name="step2_2_1">
+        <item>Bring 5 copies from above</item>
+        <item>Pay stamp duty</item>
+        <item> + 75,000 kyat</item>
+    </string-array>
+
+
+    <string name="step3">Step 3: Submit signed company registration forms at DICA and pay registration fees</string>
+    <string name="step3_1">3.1 Pay company registration fee at OSS</string>
+    <string name="step3_1_1">3.1.1 \@DICA cashier</string>
+    <string-array name="step3_1_1">
+        <item>Pay company registration fees</item>
+        <item> + 500,000 kyat</item>
+    </string-array>
+
+    <string name="step3_2">3.2 Soft copy submission</string>
+    <string name="step3_2_1">3.2.1 Preparation</string>
+    <string-array name="step3_2_1">
+        <item>Scan all documents</item>
+        <item>Burn a CD</item>
+    </string-array>
+
+    <string name="step3_2_2">3.2.2 Submit to DICA</string>
+    <string-array name="step3_2_2">
+        <item>Submit the CD to DICA</item>
+        <item>Wait 4 days</item>
+    </string-array>
+
+    <string name="step4">Step 4: Obtain company incorporation certificate</string>
+    <string name="step4_1">4.1 Getting company incorporation certificate</string>
+    <string name="step4_1_1">4.1.1 Obtain the company incorporation certificate at DICA</string>
+    <string-array name="step4_1_1">
+        <item>Obtain the company incorporation certificate at DICA</item>
+    </string-array>
+
+    <string name="step4_2">4.2 Confirm registered office address (within one month of registration)</string>
+    <string name="step4_2_1">4.2.1 Get confirmation letters</string>
+    <string-array name="step4_2_1">
+        <item>Obtain ward\'s confirmation</item>
+    </string-array>
+
+    <string name="step4_2_2">4.2.2 Submit the confirmation letter to DICA</string>
+    <string-array name="step4_2_2">
+        <item>Submit the ward\'s confirmation letter to DICA</item>
+    </string-array>
+</resources>

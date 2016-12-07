@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group2_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/lvl2_bg"
+    android:focusable="false"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/lvl2_row_height"
+    android:paddingLeft="@dimen/lvl2_padding"
+    android:textColor="@color/lvl2_fg"
+    android:textSize="@dimen/lvl2_text_size" />

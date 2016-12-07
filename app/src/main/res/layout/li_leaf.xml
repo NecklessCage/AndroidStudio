@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_leaf"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/leaf_row_height"
+    android:layout_gravity="center_vertical"
+    android:background="@color/leaf_bg"
+    android:focusable="false"
+    android:gravity="center_vertical"
+    android:padding="@dimen/leaf_padding"
+    android:textColor="@color/leaf_fg"
+    android:textSize="@dimen/leaf_text_size"
+    android:textStyle="italic" />
