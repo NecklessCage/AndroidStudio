@@ -212,7 +212,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     // Calculates the row count for a lvl0Indx expandable list adapter. Each level2 group counts 1 row
     // (group row) plus any child row that belongs to the group
     private int calculateViewHeight(int lvl0Indx, ExpandableListView lvl1View) {
-        final int padding = 4;
+        final int padding = 2;
         int lvl1GroupCount = _data[lvl0Indx].length;
         int lvl1rowHeight = padding + _context.getResources().getDimensionPixelSize(R.dimen.lvl1_row_height);
         int lvl2rowHeight = padding + _context.getResources().getDimensionPixelSize(R.dimen.lvl2_row_height);

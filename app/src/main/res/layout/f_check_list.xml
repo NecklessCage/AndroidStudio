@@ -2,13 +2,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_light"
     android:orientation="vertical"
     tools:context="bupi.companyregistraralpha21.FragmentCheckList">
+
+    <TextView
+        android:id="@+id/txt_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <ListView
         android:id="@+id/lst_check_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10" />
+        android:layout_weight="29" />
 
 </LinearLayout>

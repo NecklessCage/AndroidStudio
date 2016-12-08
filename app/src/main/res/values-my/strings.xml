@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ကုမ္ပဏီမှတ်ပုံတင် (က) ၂.၁</string>
 
 
     <string name="step1">၁ DICA တွင် မိမိ အသုံးပြုလိုသော ကုမ္ပဏီနာမည် ရနိုင်မရနိုင် စုံစမ်းရန်</string>
@@ -8,30 +7,30 @@
     <string name="step1_1">၁.၁ လက်မှတ်ထိုးထားသော ကုမ္ပဏီနာမည်စိစစ်မှုဖောင် နှင့်တကွ ဒါရိုက်တာ (၂) ဦး၏ မှတ်ပုံတင်မိတ္တူများအား တင်ခြင်း</string>
     <string name="step1_1_1">၁.၁.၁ ပြင်ဆင်ရန်များ</string>
     <string-array name="step1_1_1">
-        <item>ကုမ္ပဏီနာမည် စိစစ်မှုဖောင် (DICA မှဝယ်ယူရန် သို့မဟုတ် DICA website မှ download ရယူပါ)။</item>
+        <item>ကုမ္ပဏီနာမည် စိစစ်မှုဖောင် (DICA မှဝယ်ယူရန် သို့မဟုတ် dica.gov.mm/mm မှ download ရယူပါ)။</item>
         <item>+ ၁,၀၀၀ ကျပ်</item>
         <item>ကုမ္ပဏီနာမည် အနည်းဆုံး (၅) ခု စဥ်းစားပြင်ဆင်သွားပါ။</item>
-        <item>ကုမ္ပဏီဒါရိုက်တာများ၏ မှတ်ပုံတင်မိတ်တူများ ကူးဆွဲပါ။</item>
+        <item>ကုမ္ပဏီဒါရိုက်တာများ၏ မှတ်ပုံတင်များအား မိတ္တူများ ကူးဆွဲပါ။</item>
     </string-array>
 
-    <string name="step1_1_2">၁.၁.၂ DICA သို့ရောက်ရှိသောအခါ</string>
+    <string name="step1_1_2">၁.၁.၂ DICA သို့သွားရန်</string>
     <string-array name="step1_1_2">
         <item>နံနက် ၈း၃၀ အရောက်သွားပါ။</item>
         <item>ဖြည့်ပြီးသား ကုမ္ပဏီနာမည် စိစစ်မှုဖောင်ကို တင်ပါ။</item>
     </string-array>
 
 
-    <string name="step2">၂ DICA မှ ကုပ္မဏီမှတ်ပုံတင်ရန် ဖောင်များရယူပြီး တံဆိတ်ခေါင်းခ ပေးချေရန်</string>
+    <string name="step2">၂ DICA မှ ကုမ္ပဏီမှတ်ပုံတင်ရန် ဖောင်များရယူပြီး တံဆိပ်ခေါင်းခ ပေးချေရန်</string>
     <string name="step2_1">၂.၁ DICA ၌ ကုမ္ပဏီမှတ်ပုံတင်ဖောင်များ ရယူခြင်း</string>
     <string name="step2_1_1">၂.၁.၁ ကုမ္ပဏီမှတ်ပုံတင်ဖောင်များ</string>
     <string-array name="step2_1_1">
-        <item>၁။ လျှောက်ထားရခြင်းရှင်းလင်းစာ။</item>
+        <item>၁။ ကုမ္ပဏီမှတ်ပုံတင် လျှောက်ထားခြင်း အပေါ်စာ (Cover letter)။</item>
         <item>၂။ မှတ်ပုံတင်လျှောက်ထားကြောင်း ကြေငြာခြင်း (ဖောင် ၁)။</item>
-        <item>၃။ လျှောက်ထားရာ ရုံး၏ လက်ရှိအနေအထား။</item>
-        <item>၄။ ကုမ္ပဏီတည်ထောင်ရခြင်း၏ ရည်ရွယ်ချက်ရှင်းလင်းချက်။</item>
+        <item>၃။ လျှောက်ထားရာ ရုံး၏ လက်ရှိတည်နေရာ။</item>
+        <item>၄။ ကုမ္ပဏီတည်ထောင်ရခြင်း၏ ရည်ရွယ်ချက်များ။</item>
         <item>၅။ ကုမ္ပဏီဒါရိုက်တာများ၏ အသေးစိတ်အချက်များ (ဖောင် ၂၆)။</item>
-        <item>၆။ ကုမ္ပဏီနှင့် သက်ဆိုင်ရာသူများအကြား ရှင်းလင်းချက် (Memorandum of Association)</item>
-        <item>၇။ Articles of Association</item>
+        <item>၆။ အသင်းအဖွဲ့မှတ်တမ်း (Memorandum of Association)။</item>
+        <item>၇။ အသင်းအဖွဲ့စည်းမျဥ်းများ (Articles of Association)။</item>
         <item>+ ၅,၁၀၀ ကျပ်</item>
     </string-array>
 
@@ -40,24 +39,24 @@
         <item>ကုမ္ပဏီမှတ်ပုံတင်ဖောင်များ ဖြည့်စွက်ပါ။</item>
     </string-array>
 
-    <string name="step2_1_3">၂.၁.၃ DICA သို့ရောက်ရှိသောအခါ</string>
+    <string name="step2_1_3">၂.၁.၃ DICA သို့သွားရန်</string>
     <string-array name="step2_1_3">
         <item>ဖြည့်စွက်ထားသော ကုမ္ပဏီမှတ်ပုံတင်ဖောင်များအား တင်ပြီးနောက် (၂) နာရီခန့်စောင့်ပါ။</item>
         <item>DICA မှ ပြန်လည်ပေးသော စာရွက်စာတမ်းများအား မိတ္တူများကူး၍ စာအုပ် (၅) အုပ်ချုပ်ပါ။</item>
     </string-array>
 
-    <string name="step2_2" translatable="false">၂.၂ One Stop Service (OSS) (သို့မဟုတ်) ပြည်တွင်းအကောက်ခွန်ဌာနတွင် တံဆိပ်ခေါင်းခ ပေးချေခြင်း</string>
-    <string name="step2_2_1">၂.၂.၁ OSS သို့ရောက်သောအခါ</string>
+    <string name="step2_2" translatable="false">၂.၂ One Stop Service (OSS) (သို့မဟုတ်) ပြည်တွင်း အကောက်ခွန်ဌာနတွင် တံဆိပ်ခေါင်းခ ပေးချေခြင်း</string>
+    <string name="step2_2_1">၂.၂.၁ OSS သို့သွားရန်</string>
     <string-array name="step2_2_1">
         <item>အဆင့် (၂.၁.၃) မှ စာအုပ် (၅) အုပ်ကိုယူဆောင်သွားပါ။</item>
         <item>တံဆိပ်ခေါင်းခ ပေးချေပါ။</item>
-        <item>စုစုပေါင်း ရှယ်ယာတန်ဖိုး (paid-up capital) ပေါ် မူတည်၍ + ၇၅,၀၀၀ ( &lt; ၁၀၀,၀၀၀,၀၀၀) (သို့) ၁၇၅,၀၀၀ ကျပ်</item>
+        <item>စုစုပေါင်း မတည်ငွေ ပေါ်မူတည်၍ + ၇၅, ၀၀၀ (&lt; ၁၀၀, ၀၀၀, ၀၀၀) (သို့) ၁၇၅, ၀၀၀ ကျပ်</item>
     </string-array>
 
 
     <string name="step3">၃ လက်မှတ်ထိုးပြီး မှတ်ပုံတင်ဖောင်များကို DICA တွင်တင်၍ မှတ်ပုံတင်ခ ပေးချေရန်</string>
     <string name="step3_1">၃.၁ OSS တွင် ကုမ္ပဏီမှတ်ပုံတင်ခ ပေးချေခြင်း</string>
-    <string name="step3_1_1">၃.၁.၁ DICA ငွေသွင်းကောင်တာသို့ရောက်သောအခါ</string>
+    <string name="step3_1_1">၃.၁.၁ DICA ငွေသွင်းကောင်တာ သို့သွားရန်</string>
     <string-array name="step3_1_1">
         <item>ကုမ္ပဏီမှတ်ပုံတင်ခ ပေးချေပါ။</item>
         <item> + ၅၀၀,၀၀၀ ကျပ်</item>
@@ -95,5 +94,6 @@
     </string-array>
     <string name="collapse_all">ခေါင်းစည်းသာပြပါ</string>
     <string name="expand_all">အားလုံးပြပါ</string>
+    <string name="dev_name">ကိုထက်အောင်</string>
 
 </resources>

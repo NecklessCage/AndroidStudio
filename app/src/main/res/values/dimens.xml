@@ -8,8 +8,8 @@
     <dimen name="animator_sliding_width_minus">-200dp</dimen>
 
     <!-- overall -->
-    <dimen name="button_margin">2dp</dimen>
-    <dimen name="button_margin_half">1dp</dimen>
+    <dimen name="button_margin">1dp</dimen>
+    <dimen name="button_margin_adjacent">0.5dp</dimen>
     <dimen name="elv_padding_right">5dp</dimen>
 
     <dimen name="elv_divider_height">1dp</dimen>

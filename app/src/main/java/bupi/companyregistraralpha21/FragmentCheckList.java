@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 
 /**
@@ -39,19 +40,32 @@ public class FragmentCheckList extends Fragment {
         _rootView = inflater.inflate(R.layout.f_check_list, container, false);
 
         Bundle args = getArguments();
+        final int lvl0Indx = args.getInt("lvl0Indx");
+        final int lvl1Indx = args.getInt("lvl1Indx");
+        final int lvl2Indx = args.getInt("lvl2Indx");
+
+        // Set title
+        TextView fragmentTitle = (TextView) _rootView.findViewById(R.id.txt_list_title);
+        fragmentTitle.setText("Step ("
+                + (lvl0Indx + 1) + "."
+                + (lvl1Indx + 1) + "."
+                + (lvl2Indx + 1)
+                + ")");
+        /*
+        fragmentTitle.setText("????? ("
+                + engToMm(lvl0Indx + 1)
+                + engToMm(lvl1Indx + 1)
+                + engToMm(lvl2Indx + 1)
+                + ")");
+                */
 
         ListView listView = (ListView) _rootView.findViewById(R.id.lst_check_list);
         listView.setDivider(ContextCompat.getDrawable(_rootView.getContext(), R.drawable.dv_leaf));
-        String[] data = arrayData(
-                args.getInt("lvl0Indx"),
-                args.getInt("lvl1Indx"),
-                args.getInt("lvl2Indx")
-        );
         listView.setAdapter(
                 new ArrayAdapter<>(
                         _rootView.getContext(),
                         R.layout.li_lvl_0,
-                        data
+                        arrayData(lvl0Indx, lvl1Indx, lvl2Indx)
                 )
         );
         return _rootView;
@@ -143,5 +157,36 @@ public class FragmentCheckList extends Fragment {
                 return new String[]{};
         } // 0
     } // arrayData
+
+    /**
+     * @param num num <= 9 && n >= 0
+     * @return Burmese number character corresponding to num
+     */
+    char engToMm(int num) {
+        switch (num) {
+            case 0:
+                return '?';
+            case 1:
+                return '?';
+            case 2:
+                return '?';
+            case 3:
+                return '?';
+            case 4:
+                return '?';
+            case 5:
+                return '?';
+            case 6:
+                return '?';
+            case 7:
+                return '?';
+            case 8:
+                return '?';
+            case 9:
+                return '?';
+            default:
+                return '-';
+        } // switch
+    } // engToMm
 
 } // class

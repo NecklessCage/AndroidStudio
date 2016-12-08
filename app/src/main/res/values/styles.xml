@@ -5,14 +5,26 @@
         <!---->
     </style>
 
+    <style name="AppTheme.AppTitle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@color/bg_app_title</item>
+        <item name="android:textColor">@color/fg_app_title</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.AppFooter" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@color/bg_footer</item>
+        <item name="android:textColor">@color/fg_footer</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">end|bottom</item>
+    </style>
+
     <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
         <item name="android:background">@color/accent</item>
         <item name="android:textColor">@color/primary_text</item>
-        <item name="android:padding">0dp</item>
         <item name="android:layout_marginStart">@dimen/button_margin</item>
         <item name="android:layout_marginTop">@dimen/button_margin</item>
         <item name="android:layout_marginRight">@dimen/button_margin</item>
-        <item name="android:layout_marginBottom">@dimen/button_margin_half</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_adjacent</item>
     </style>
 
 </resources>

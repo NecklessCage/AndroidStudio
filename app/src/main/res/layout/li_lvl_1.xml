@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
-    android:background="@color/lvl2_bg"
+    android:background="@drawable/lvl1_bg"
     android:focusable="false"
     android:gravity="center_vertical"
     android:minHeight="@dimen/lvl1_row_height"
