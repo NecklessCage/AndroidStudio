@@ -46,7 +46,7 @@
         <item>DICA မှ ပြန်လည်ပေးသော စာရွက်စာတမ်းများအား မိတ္တူများကူး၍ စာအုပ် (၅) အုပ်ချုပ်ပါ။</item>
     </string-array>
 
-    <string name="step2_2" translatable="false">၂.၂ One Stop Service (OSS) (သို့မဟုတ်) ပြည်တွင်းအကောက်ခွန်ဌာနတွင် တံဆိပ်ခေါင်းခ ပေးချေခြင်း၂.၂ One Stop Service (OSS) (သို့မဟုတ်) ပြည်တွင်းအကောက်ခွန်ဌာနတွင် တံဆိပ်ခေါင်းခ ပေးချေခြင်း</string>
+    <string name="step2_2" translatable="false">၂.၂ One Stop Service (OSS) (သို့မဟုတ်) ပြည်တွင်းအကောက်ခွန်ဌာနတွင် တံဆိပ်ခေါင်းခ ပေးချေခြင်း</string>
     <string name="step2_2_1">၂.၂.၁ OSS သို့ရောက်သောအခါ</string>
     <string-array name="step2_2_1">
         <item>အဆင့် (၂.၁.၃) မှ စာအုပ် (၅) အုပ်ကိုယူဆောင်သွားပါ။</item>

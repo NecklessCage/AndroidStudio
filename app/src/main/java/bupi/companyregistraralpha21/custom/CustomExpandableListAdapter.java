@@ -119,6 +119,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         return 1;
         //return _data[groupPosition].length; // ********************************** WARNING!!!!! This affects view in unexpected ways.
     }
+
     // TODO: Following method is a workaround since the developer is too dumb to override onLayout() in LastExpandableListView
     public int childCount(int gp) {
         return _data[gp].length;
@@ -211,9 +212,10 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     // Calculates the row count for a lvl0Indx expandable list adapter. Each level2 group counts 1 row
     // (group row) plus any child row that belongs to the group
     private int calculateViewHeight(int lvl0Indx, ExpandableListView lvl1View) {
+        final int padding = 4;
         int lvl1GroupCount = _data[lvl0Indx].length;
-        int lvl1rowHeight = 1 + _context.getResources().getDimensionPixelSize(R.dimen.lvl1_row_height);
-        int lvl2rowHeight = 1 + _context.getResources().getDimensionPixelSize(R.dimen.lvl2_row_height);
+        int lvl1rowHeight = padding + _context.getResources().getDimensionPixelSize(R.dimen.lvl1_row_height);
+        int lvl2rowHeight = padding + _context.getResources().getDimensionPixelSize(R.dimen.lvl2_row_height);
         int viewHeight = 0;
         for (int j = 0; j < lvl1GroupCount; j++) {
             viewHeight += lvl1rowHeight; // for the group row
