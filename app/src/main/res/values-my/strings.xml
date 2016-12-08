@@ -93,5 +93,7 @@
     <string-array name="step4_2_2">
         <item>အထက်ပါ ရပ်ကွက်ထောက်ခံစာအား DICA သို့ တင်ပါ။</item>
     </string-array>
+    <string name="collapse_all">ခေါင်းစည်းသာပြပါ</string>
+    <string name="expand_all">အားလုံးပြပါ</string>
 
 </resources>

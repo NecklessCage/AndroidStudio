@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="lvl1_bg">#1b5e20</color>
-    <color name="lvl2_bg">#43a047</color>
-    <color name="lvl3_bg">#a5d6a7</color>
-    <color name="leaf_bg">#43a047</color>
+    <color name="lvl1_bg">@color/primary_dark</color>
+    <color name="lvl2_bg">@color/primary</color>
+    <color name="lvl3_bg">@color/primary_light</color>
+    <color name="leaf_bg">@color/primary</color>
 
-    <color name="lvl1_fg">#ccc</color>
-    <color name="lvl2_fg">#eee</color>
-    <color name="lvl3_fg">#333</color>
-    <color name="leaf_fg">#eee</color>
+    <color name="lvl1_fg">@color/primary_text</color>
+    <color name="lvl2_fg">@color/primary_text</color>
+    <color name="lvl3_fg">@color/primary_text_dark</color>
+    <color name="leaf_fg">@color/primary_text_dark</color>
 
-    <color name="lvl1_divider">#ccc</color>
-    <color name="lvl2_divider">#ccc</color>
-    <color name="lvl3_divider">#222</color>
-    <color name="leaf_divider">#ccc</color>
+    <color name="lvl1_divider">@color/primary_light</color>
+    <color name="lvl2_divider">@color/primary_light</color>
+    <color name="lvl3_divider">@color/primary_light</color>
+    <color name="leaf_divider">@color/primary_light</color>
+
+    <!-- Material -->
+    <color name="primary">#009688</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="primary_light">#B2DFDB</color>
+    <color name="accent">#607D8B</color>
+    <color name="primary_text">#B2DFDB</color>
+    <color name="primary_text_dark">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
 </resources>

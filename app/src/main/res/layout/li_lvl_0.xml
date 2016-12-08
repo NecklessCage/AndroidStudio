@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/group_name"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
     android:background="@color/lvl1_bg"
     android:focusable="false"
     android:gravity="center_vertical"
-    android:minHeight="@dimen/lvl1_row_height"
-    android:paddingLeft="@dimen/lvl1_padding"
+    android:minHeight="@dimen/lvl0_row_height"
+    android:paddingEnd="@dimen/elv_padding_right"
+    android:paddingStart="@dimen/lvl0_padding"
     android:textColor="@color/lvl1_fg"
-    android:textSize="@dimen/lvl1_text_size" />
+    android:textSize="@dimen/lvl0_text_size" />

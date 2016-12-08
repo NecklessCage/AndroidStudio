@@ -7,19 +7,26 @@
     <dimen name="animator_sliding_width_plus">200dp</dimen>
     <dimen name="animator_sliding_width_minus">-200dp</dimen>
 
-    <!-- -->
-    <dimen name="lvl1_row_height">80dp</dimen>
+    <!-- overall -->
+    <dimen name="button_margin">2dp</dimen>
+    <dimen name="button_margin_half">1dp</dimen>
+    <dimen name="elv_padding_right">5dp</dimen>
+
+    <dimen name="elv_divider_height">1dp</dimen>
+
+    <!-- rows -->
+    <dimen name="lvl0_row_height">80dp</dimen>
+    <dimen name="lvl1_row_height">60dp</dimen>
     <dimen name="lvl2_row_height">60dp</dimen>
-    <dimen name="lvl3_row_height">60dp</dimen>
     <dimen name="leaf_row_height">40dp</dimen>
 
-    <dimen name="lvl1_padding">10dp</dimen>
-    <dimen name="lvl2_padding">25dp</dimen>
-    <dimen name="lvl3_2_padding">40dp</dimen>
+    <dimen name="lvl0_padding">30dp</dimen>
+    <dimen name="lvl1_padding">40dp</dimen>
+    <dimen name="lvl2_2_padding">50dp</dimen>
     <dimen name="leaf_padding">15dp</dimen>
 
-    <dimen name="lvl1_text_size">16sp</dimen>
+    <dimen name="lvl0_text_size">16sp</dimen>
+    <dimen name="lvl1_text_size">14sp</dimen>
     <dimen name="lvl2_text_size">14sp</dimen>
-    <dimen name="lvl3_text_size">14sp</dimen>
     <dimen name="leaf_text_size">14sp</dimen>
 </resources>

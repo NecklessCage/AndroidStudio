@@ -18,7 +18,7 @@ public class FragmentEntry extends Fragment {
     public static final String tag = "entry";
 
     Button _btnExpandCollapse;
-    ExpandableListView _exExpandableListView;
+    ExpandableListView _expandableListView;
     boolean _isExpanded;
 
     public FragmentEntry() {
@@ -93,20 +93,40 @@ public class FragmentEntry extends Fragment {
     void initiate(View v) {
         _isExpanded = false;
 
-        // Set button on click listener
         _btnExpandCollapse = (Button) v.findViewById(R.id.btn_expand_collapse);
-        // TODO: button on-click listener
 
         _btnExpandCollapse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Refactored for shorter code
+                final int groupCount = _expandableListView.getExpandableListAdapter().getGroupCount();
+                for (int j = 0; j < groupCount; j++) {
+                    final int childCount = ((CustomExpandableListAdapter) _expandableListView.getExpandableListAdapter()).childCount(j);
+
+                    if (_isExpanded) _expandableListView.collapseGroup(j);
+                    else _expandableListView.expandGroup(j);
+
+                    for (int k = 0; k < childCount; k++) {
+                        final ExpandableListView lv = (ExpandableListView) _expandableListView.getExpandableListAdapter().getChildView(j, k, false, null, null);
+
+                        if (_isExpanded) lv.collapseGroup(k);
+                        else lv.expandGroup(k);
+                    } // for k -> children
+                } // for j -> groups
+                _isExpanded = !_isExpanded;
+                _btnExpandCollapse.setText(_isExpanded ? R.string.collapse_all : R.string.expand_all);
+
+                /*
                 // Following if-block could be shortened but this might be better. Maybe.
                 if (_isExpanded) { // Collapse them all
-                    for (int j = 0; j < _exExpandableListView.getExpandableListAdapter().getGroupCount(); j++) {
-                        _exExpandableListView.collapseGroup(j);
-                        for (int k = 0; k < _exExpandableListView.getExpandableListAdapter().getChildrenCount(j); k++) {
+                    for (int j = 0; j < _expandableListView.getExpandableListAdapter().getGroupCount(); j++) {
+                        _expandableListView.collapseGroup(j);
+                        final int childCount = ((CustomExpandableListAdapter)
+                                _expandableListView.getExpandableListAdapter())
+                                .childCount(j);
+                        for (int k = 0; k < childCount; k++) {
                             ((ExpandableListView)
-                                    _exExpandableListView
+                                    _expandableListView
                                             .getExpandableListAdapter()
                                             .getChildView(j, k, false, null, null))
                                     .collapseGroup(k);
@@ -116,14 +136,15 @@ public class FragmentEntry extends Fragment {
                     _btnExpandCollapse.setText(R.string.expand_all);
                     // -----------------------------------------------------------------------------------------------
                 } else { // Expand them all
-                    for (int j = 0; j < _exExpandableListView.getExpandableListAdapter().getGroupCount(); j++) {
-                        _exExpandableListView.expandGroup(j);
+                    final int groupCount = _expandableListView.getExpandableListAdapter()
+                            .getGroupCount();
+                    for (int j = 0; j < groupCount; j++) {
+                        _expandableListView.expandGroup(j);
                         final int childCount = ((CustomExpandableListAdapter)
-                                _exExpandableListView.getExpandableListAdapter())
-                                .childCount(j);
+                                _expandableListView.getExpandableListAdapter()).childCount(j);
                         for (int k = 0; k < childCount; k++) {
                             ((ExpandableListView)
-                                    _exExpandableListView
+                                    _expandableListView
                                             .getExpandableListAdapter()
                                             .getChildView(j, k, false, null, null))
                                     .expandGroup(k);
@@ -132,15 +153,16 @@ public class FragmentEntry extends Fragment {
                     _isExpanded = true;
                     _btnExpandCollapse.setText(R.string.collapse_all);
                 } // if expanded
+                */
             } // onClick
         });
 
         // Populate expandable list view
-        _exExpandableListView = (ExpandableListView) v.findViewById(R.id.main_list);
-        _exExpandableListView.setAdapter(
+        _expandableListView = (ExpandableListView) v.findViewById(R.id.main_list);
+        _expandableListView.setAdapter(
                 new CustomExpandableListAdapter(
                         v.getContext(),
-                        _exExpandableListView,
+                        _expandableListView,
                         data()
                 )
         );

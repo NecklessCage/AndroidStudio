@@ -7,7 +7,8 @@
     android:background="@color/lvl2_bg"
     android:focusable="false"
     android:gravity="center_vertical"
-    android:minHeight="@dimen/lvl2_row_height"
-    android:paddingLeft="@dimen/lvl2_padding"
+    android:minHeight="@dimen/lvl1_row_height"
+    android:paddingEnd="@dimen/elv_padding_right"
+    android:paddingStart="@dimen/lvl1_padding"
     android:textColor="@color/lvl2_fg"
-    android:textSize="@dimen/lvl2_text_size" />
+    android:textSize="@dimen/lvl1_text_size" />
